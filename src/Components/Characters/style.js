@@ -15,6 +15,7 @@ export const BoxWrapper = styled.div`
   margin-bottom: 16px;
   width: 22%;
   cursor: pointer;
+  height: fit-content;
   .mainImg {
     width: 100%;
   }

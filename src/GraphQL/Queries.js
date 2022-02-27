@@ -1,18 +1,14 @@
 import { gql } from "@apollo/client";
-import { GraphQLObjectType, GraphQLString } from "graphql";
-
-const FilterCharacter = new GraphQLObjectType({
-  name: "filerCharacter",
-  fields: {
-    name: { type: GraphQLString },
-  },
-});
+import { FilterCharacter } from "./Types";
 
 export const LOAD_CHAR = gql`
   query getCharacters($page: Int, $filter: FilterCharacter) {
     characters(page: $page, filter: $filter) {
       info {
         count
+        pages
+        next
+        prev
       }
       results {
         id

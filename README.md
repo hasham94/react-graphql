@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can search characters by name and has the option to filter by gender,
+There is pagination at the end characters list to move between different pages.
+
 ## Available Scripts
 
 In the project directory, you can run:
